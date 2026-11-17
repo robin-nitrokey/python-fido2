@@ -29,7 +29,6 @@ pcsc = ["pyscard (>=1.9, <3)"]
 [dependency-groups]
 dev = [
     "pytest>=9.0,<10",
-    "sphinx>=9.0,<10; python_version>='3.11'",
     "sphinx-rtd-theme>=3,<4",
     "sphinx-autoapi>=3.3.3,<4",
 ]

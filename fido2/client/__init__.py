@@ -997,7 +997,8 @@ class _Ctap2ClientBackend(_ClientBackend):
             except ValueError as e:
                 raise ClientError.ERR.CONFIGURATION_UNSUPPORTED(e)
 
-            opts = {"uv": True} if internal_uv else None
+            opts = {"uv": True} if internal_uv else {}
+            opts["up"] = False
 
             # Calculate pin_auth
             client_data_hash = client_data.hash
